@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <style>
+        .media-container {
+            display: flex; /* Places items side by side */
+            gap: 20px; /* Space between image and video */
+            align-items: center; /* Vertically align */
+        }
+    </style>
+    </head>
+<body style="background-color:bisque;">
+
+<header>
+    <h1>Meal Plan</h1>
+</header>
+
+<main>
+    <!-- Media Section -->
+    <section>
+        <h2>Welcome All 🍕🍟🌭🍿🥂🥤</h2>
+        <p>This form demonstrates our Meal Plan</p>
+        <div class="media-container">
+        <img src="img2.jpg" alt="Sample Meal Banner" width="400" height="360">
+        <br>
+        <video controls>
+            <source src="vid3.mp4" type="video/mp4" width="300" height="300">
+            Your browser does not support video.
+        </video>
+        </div>
+    </section>
+
+    <!-- List Section -->
+    <section>
+        <h2>Benefits of Our Meal Plan</h2>
+        <ul>
+            <li>Healthy, balanced meals delivered</li>
+            <li>Customizable to dietary needs</li>
+            <li>Affordable weekly pricing</li>
+        </ul>
+        <h3>Steps to Get Started:</h3>
+        <ol>
+            <li>Fill out the registration form below.</li>
+            <li>Choose your meal plan type.</li>
+            <li>Enjoy fresh meals every day!</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Meal Plan Options</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Meals per Week</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>5 Meals</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>10 Meals</td>
+                    <td>$45</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>15 Meals</td>
+                    <td>$65</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Meal Plan Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <!-- Name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" placeholder="At least 8 characters" required><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+254 712 345 678" pattern="\+?[0-9\s\-]+" required><br>
+
+            <!-- Read-only Field -->
+            <label for="member-id">Member ID:</label>
+            <input type="text" id="member-id" name="member-id" value="AUTO-GENERATED" readonly><br>
+
+            <!-- Date -->
+            <label for="start-date">Preferred Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required><br>
+
+            <!-- Select -->
+            <label for="plan">Select Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="">--Choose a Plan--</option>
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select><br>
+
+            <!-- Radio -->
+            <label>Meal Preference:</label>
+            <input type="radio" id="veg" name="preference" value="Vegetarian" required> Vegetarian
+            <input type="radio" id="nonveg" name="preference" value="Non-Vegetarian"> Non-Vegetarian
+            <input type="radio" id="vegan" name="preference" value="Vegan"> Vegan
+            <br>
+            <!-- Checkbox -->
+            <label>Additional Options:</label>
+            <input type="checkbox" name="extras" value="snacks"> Include Snacks
+            <input type="checkbox" name="extras" value="drinks"> Include Drinks
+            <input type="checkbox" name="extras" value="desserts"> Include Desserts
+            <br>
+            <!-- Textarea -->
+            <label for="comments">Special Instructions:</label>
+            <textarea id="comments" name="comments" placeholder="Write your preferences here..."></textarea>
+            <br>
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p style="text-align: center;">&copy; 2025 Meal Plan Service</p>
+</footer>
+
+</body>
+</html>
